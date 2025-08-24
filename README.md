@@ -54,3 +54,11 @@ This rich dataset enables analysis of customer behavior, product performance, an
    - Curated datasets are exposed for **BI tools** (e.g., Amazon QuickSight / Power BI).  
    - Stakeholders can generate insights such as **Top-Selling Products, High-Value Customers, and Market Segments**, driving data-driven decision making.  
   
+
+###💰 Cost Optimization
+
+1.Partitioned Parquet Storage in S3 reduces query scan costs.
+2.Redshift Spectrum queries data directly from S3 → avoids duplicating storage.
+3.Serverless Redshift scales automatically → no fixed cluster costs.
+4.Schema enforcement in Glue ensures data consistency and avoids costly reprocessing.
+5.Eliminated need for Glue Crawler by defining schema directly → cost savings.
