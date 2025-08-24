@@ -9,4 +9,19 @@ This project implements a Data Lakehouse for E-commerce Analytics by unifying th
  [Architecture Diagram](https://github.com/rtriders/Data-Lakehouse-for-E-commerce-Analytics/blob/main/Architecture.jpeg?plain=1)
 
 
+### About E-commerce DataSource
+
+The [Walmart E-commerce DataSet](https://www.kaggle.com/datasets/devarajv88/walmart-sales-dataset) is derived from Walmart’s customer transactions, providing detailed insights into both customer demographics and purchasing behavior. It includes:
+
+1. Unique Identifiers: Customer ID, Product ID
+
+2. Customer Demographics: Gender, Age Group, Occupation (masked), Marital Status
+
+3. Geographic Attributes: City Category, Duration of Stay in Current City
+
+4. Product Information: Product Categories (masked)
+
+5. Transactional Details: Purchase Amounts
+
+This rich dataset enables analysis of customer behavior, product performance, and market segmentation for data-driven decision-making.
   
