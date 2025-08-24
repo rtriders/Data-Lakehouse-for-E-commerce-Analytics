@@ -55,7 +55,7 @@ This rich dataset enables analysis of customer behavior, product performance, an
    - Stakeholders can generate insights such as **Top-Selling Products, High-Value Customers, and Market Segments**, driving data-driven decision making.  
   
 
-###💰 Cost Optimization
+### 💰 Cost Optimization
 
 1. Partitioned Parquet Storage in S3 reduces query scan costs.
 2. Redshift Spectrum queries data directly from S3 → avoids duplicating storage.
