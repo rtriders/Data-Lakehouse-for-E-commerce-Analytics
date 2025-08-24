@@ -6,7 +6,7 @@ This project implements a Data Lakehouse for E-commerce Analytics by unifying th
 
  ### Architecture
 
-  [Architecture Diagram](https://github.com/rtriders/Data-Lakehouse-for-E-commerce-Analytics/blob/main/Architecture.jpeg)
+ ([Architecture Diagram](https://github.com/rtriders/Data-Lakehouse-for-E-commerce-Analytics/blob/main/Architecture.jpeg?plain=1)
 
 
   
