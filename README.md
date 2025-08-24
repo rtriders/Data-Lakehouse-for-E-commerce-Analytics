@@ -28,6 +28,29 @@ This rich dataset enables analysis of customer behavior, product performance, an
 2. [**AWS Glue**](https://docs.aws.amazon.com/glue/index.html): AWS Glue is used to build **ETL pipelines** that clean, transform, and enrich raw data into structured fact and dimension tables. It orchestrates the processing flow from **Bronze → Silver → Gold** layers.  
 3. [**PySpark**](https://spark.apache.org/docs/latest/api/python/): PySpark, the Python API for Apache Spark, is used within AWS Glue for **distributed data processing and transformations**. It enables large-scale computation, schema enforcement, and advanced segmentation (e.g., Customer Lifetime Value, Product Revenue Contribution).  
 4. [**Amazon Redshift Serverless**](https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-whatis.html): Used as the **analytics warehouse layer**, Redshift Serverless integrates with S3 through Spectrum to query Gold datasets. It supports **dimensional modeling (facts & dimensions)** for BI and reporting.  
-5. [**Amazon Redshift Spectrum**](https://docs.aws.amazon.com/redshift/latest/dg/c-using-redshift-spectrum.html): Enables Redshift to directly **query Parquet files stored in Amazon S3 (Gold Layer)** without the need for data loading, reducing storage costs while enabling near real-time analytics.  
+5. [**Amazon Redshift Spectrum**](https://docs.aws.amazon.com/redshift/latest/dg/c-using-redshift-spectrum.html): Enables Redshift to directly **query Parquet files stored in Amazon S3 (Gold Layer)** without the need for data loading, reducing storage costs while enabling near real-time analytics.
 
+ 
+
+### 🚀 Execution Flow  
+
+1. **Data Ingestion (Bronze Layer)**  
+   - Raw e-commerce transactional data (customer, product, sales) is ingested and stored in **Amazon S3 (Bronze Layer)** in its original format.  
+
+2. **Data Transformation (Silver Layer)**  
+   - **AWS Glue with PySpark** processes raw data by cleaning, validating, and standardizing it.  
+   - The transformed data is stored in **Amazon S3 (Silver Layer)** in partitioned Parquet format for efficient querying.  
+
+3. **Data Modeling (Gold Layer)**  
+   - Further transformations in Glue organize data into **fact (Sales) and dimension (Customer, Product)** tables following a **Star Schema**.  
+   - Advanced business segmentations such as **Customer Lifetime Value (CLV), Product Revenue Contribution, and Frequency Segments** are applied.  
+   - Final curated data is stored in **Amazon S3 (Gold Layer)**.  
+
+4. **Analytics Integration**  
+   - **Amazon Redshift Spectrum** is used to directly query Gold Layer tables in S3.  
+   - **Amazon Redshift Serverless** serves as the **analytics warehouse**, enabling scalable and interactive querying.  
+
+5. **Business Insights & Reporting**  
+   - Curated datasets are exposed for **BI tools** (e.g., Amazon QuickSight / Power BI).  
+   - Stakeholders can generate insights such as **Top-Selling Products, High-Value Customers, and Market Segments**, driving data-driven decision making.  
   
