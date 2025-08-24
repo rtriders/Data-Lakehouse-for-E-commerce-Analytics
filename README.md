@@ -14,13 +14,9 @@ This project implements a Data Lakehouse for E-commerce Analytics by unifying th
 The [Walmart E-commerce DataSet](https://www.kaggle.com/datasets/devarajv88/walmart-sales-dataset) is derived from Walmart’s customer transactions, providing detailed insights into both customer demographics and purchasing behavior. It includes:
 
 1. Unique Identifiers: Customer ID, Product ID
-
 2. Customer Demographics: Gender, Age Group, Occupation (masked), Marital Status
-
 3. Geographic Attributes: City Category, Duration of Stay in Current City
-
 4. Product Information: Product Categories (masked)
-
 5. Transactional Details: Purchase Amounts
 
 This rich dataset enables analysis of customer behavior, product performance, and market segmentation for data-driven decision-making.
@@ -28,8 +24,6 @@ This rich dataset enables analysis of customer behavior, product performance, an
 
 ### Services Used
  
-### ⚙️ Technologies & AWS Services Used  
-
 1. [**Amazon S3**](https://docs.aws.amazon.com/s3/index.html): Amazon Simple Storage Service (S3) is used as the **data lake storage layer**, organizing data into **Bronze (raw), Silver (cleaned), and Gold (curated)** layers. It provides durable, scalable, and cost-effective object storage for transactional and analytical datasets.  
 2. [**AWS Glue**](https://docs.aws.amazon.com/glue/index.html): AWS Glue is used to build **ETL pipelines** that clean, transform, and enrich raw data into structured fact and dimension tables. It orchestrates the processing flow from **Bronze → Silver → Gold** layers.  
 3. [**PySpark**](https://spark.apache.org/docs/latest/api/python/): PySpark, the Python API for Apache Spark, is used within AWS Glue for **distributed data processing and transformations**. It enables large-scale computation, schema enforcement, and advanced segmentation (e.g., Customer Lifetime Value, Product Revenue Contribution).  
