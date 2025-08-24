@@ -29,7 +29,7 @@ This rich dataset enables analysis of customer behavior, product performance, an
 3. [**PySpark**](https://spark.apache.org/docs/latest/api/python/): PySpark, the Python API for Apache Spark, is used within AWS Glue for **distributed data processing and transformations**. It enables large-scale computation, schema enforcement, and advanced segmentation (e.g., Customer Lifetime Value, Product Revenue Contribution).  
 4. [**Amazon Redshift Serverless**](https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-whatis.html): Used as the **analytics warehouse layer**, Redshift Serverless integrates with S3 through Spectrum to query Gold datasets. It supports **dimensional modeling (facts & dimensions)** for BI and reporting.  
 5. [**Amazon Redshift Spectrum**](https://docs.aws.amazon.com/redshift/latest/dg/c-using-redshift-spectrum.html): Enables Redshift to directly **query Parquet files stored in Amazon S3 (Gold Layer)** without the need for data loading, reducing storage costs while enabling near real-time analytics.
-6. 6. [**Amazon QuickSight**](https://docs.aws.amazon.com/quicksight/index.html): QuickSight is used as the **BI and visualization layer**, enabling analysts to create **interactive dashboards, charts, and reports** directly from Redshift or S3 data. It supports **ad hoc analysis, embedded analytics, and ML-powered insights**.
+6. [**Amazon QuickSight**](https://docs.aws.amazon.com/quicksight/index.html): QuickSight is used as the **BI and visualization layer**, enabling analysts to create **interactive dashboards, charts, and reports** directly from Redshift or S3 data. It supports **ad hoc analysis, embedded analytics, and ML-powered insights**.
  
 
 ### 🚀 Execution Flow  
