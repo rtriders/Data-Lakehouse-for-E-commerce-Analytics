@@ -22,7 +22,7 @@ The [Walmart E-commerce DataSet](https://www.kaggle.com/datasets/devarajv88/walm
 This rich dataset enables analysis of customer behavior, product performance, and market segmentation for data-driven decision-making.
 
 
-### Services Used
+### ⚙️ Services Used
  
 1. [**Amazon S3**](https://docs.aws.amazon.com/s3/index.html): Amazon Simple Storage Service (S3) is used as the **data lake storage layer**, organizing data into **Bronze (raw), Silver (cleaned), and Gold (curated)** layers. It provides durable, scalable, and cost-effective object storage for transactional and analytical datasets.  
 2. [**AWS Glue**](https://docs.aws.amazon.com/glue/index.html): AWS Glue is used to build **ETL pipelines** that clean, transform, and enrich raw data into structured fact and dimension tables. It orchestrates the processing flow from **Bronze → Silver → Gold** layers.  
